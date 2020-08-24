@@ -5,3 +5,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .activo{
     background-color: black !important;
 }
+.fondo{
+    background-color: #303030;
+}
