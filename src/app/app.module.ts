@@ -14,9 +14,12 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { AgregarUsuariosComponent } from './usuarios/agregar-usuarios/agregar-usuarios.component';
 import { EditarUsuariosComponent } from './usuarios/editar-usuarios/editar-usuarios.component';
+import { ArticuloComponent } from './articulo/articulo.component';
+import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { EditarUsuariosComponent } from './usuarios/editar-usuarios/editar-usuar
     InicioComponent,
     UsuariosComponent,
     AgregarUsuariosComponent,
-    EditarUsuariosComponent
+    EditarUsuariosComponent,
+    ArticuloComponent,
+    ArticuloDetalleComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { EditarUsuariosComponent } from './usuarios/editar-usuarios/editar-usuar
     MatButtonToggleModule,
     MatTabsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
