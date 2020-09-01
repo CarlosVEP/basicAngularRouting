@@ -1,0 +1,17 @@
+<mat-card class="example-card" *ngFor="let producto of productos">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title><a (click)="pasarParametro(producto)">{{producto.nombre}}</a></mat-card-title>
+        <mat-card-subtitle>{{producto.precio | currency:'Bs'}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image style="width: 500px;" [src]="producto.imagen" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>
+            {{producto.descripcion}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+    </mat-card-actions>
+</mat-card>

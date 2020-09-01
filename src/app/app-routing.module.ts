@@ -8,6 +8,8 @@ import { AgregarUsuariosComponent } from './usuarios/agregar-usuarios/agregar-us
 import { EditarUsuariosComponent } from './usuarios/editar-usuarios/editar-usuarios.component';
 import { ArticuloComponent } from './articulo/articulo.component';
 import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
+import { ProductoComponent } from './producto/producto.component';
+import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -19,6 +21,8 @@ const routes: Routes = [
   },
   { path: 'articulo', component: ArticuloComponent },
   { path: 'articuloDetalle/:nombre/:precio', component: ArticuloDetalleComponent },
+  { path: 'producto', component: ProductoComponent },
+  { path: 'productoDetalle', component: ProductoDetalleComponent },
   { path: '**', component: Pagina404Component }
 ];
 
